@@ -99,6 +99,16 @@ main{
     display: flex;
     justify-content: center;
 }
+.main__service__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+    width: 100%;
+    margin-top: 100px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
 .main__service__img__image{
     height: 415px;
     width: 555px;
