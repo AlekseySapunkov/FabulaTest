@@ -6,8 +6,6 @@
 body{
     font: 'Jost', sans-serif;
     background-color: #E5E5E5;
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
 h1{
@@ -95,9 +93,10 @@ menu{
     width: 35%;
     padding-top: 0;
 }
-main{
-    display: flex;
-    justify-content: center;
+.main__service{
+    margin-top: 100px;
+    text-align: center;
+    background: #FFFFFF;
 }
 .main__service__img{
     display: flex;
@@ -106,7 +105,7 @@ main{
     padding: auto;
     width: 100%;
     margin-top: 100px;
-    background: #FFFFFF;
+    color: #FFFFFF;
     overflow: hidden;
 }
 .main__service__img__image{
@@ -126,6 +125,21 @@ main{
 }
 #img-4{
     background-image: url('../img/4.png');
+}
+.main__airplane{
+    text-align: center;
+}
+.main__airplane__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding: auto;
+    column-gap: 20px;
+    row-gap: 60px;
+}
+.card{
+
 }
 
 footer{
