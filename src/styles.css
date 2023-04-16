@@ -8,9 +8,13 @@ body{
     background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 h1{
     font-style: normal;
+    font-weight: 700;
+}
+h2{
     font-weight: 700;
 }
 a{
@@ -22,13 +26,11 @@ header{
     width: 100%;
     background-image: url(../img/bg1.png);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     color: #FFFFFF;
     justify-content: center;
-    padding-top: 55.5px;
-    padding-bottom: 125px;
-}
-.header__container{
+    align-items: center;
 }
 .header__container-nav-logo{
     display: flex;
@@ -79,12 +81,41 @@ menu{
 }
 .header__form{
     margin-bottom: 0;
+    height: 341px;
 }
-header__text-container-1{
-    margin-top: 260px;
+.header__text-container-1{
+    margin-top: 2%;
+    text-align: left;
+    width: 40%;
 }
-header__text-container-2{
+.header__text-container-2{
     display: flex;
+    text-align: left;
+    margin-top: 10%;
+    width: 35%;
+    padding-top: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.main__service__img__image{
+    height: 415px;
+    width: 555px;
+    border-radius: 0px;
+
+}
+#img-1{
+    background-image: url('../img/1.png');
+}
+#img-2{
+    background-image: url('../img/2.png');
+}
+#img-3{
+    background-image: url('../img/3.png');
+}
+#img-4{
+    background-image: url('../img/4.png');
 }
 
 footer{
@@ -107,5 +138,8 @@ footer{
 @media (max-width: 320px){
     .header{
         align-items: center;
+    }
+    .phone{
+        display: none;
     }
 }
