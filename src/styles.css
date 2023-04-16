@@ -6,17 +6,73 @@
 body{
     font: 'Jost', sans-serif;
     background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
 }
 header{
-    width: 100%;
-    height: 1280px;
-    background-image: url(../img/bg1.png);
     display: flex;
+    width: 100%;
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    padding-top: 55.5px;
+    padding-bottom: 125px;
 }
-.header_logo{
+.header__container{
+}
+.header-logo{
+    display: flex;
     width: 156px;
     height: 111px;
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: 900;
+    padding: auto;
+}
+nav{
+    display: none;
+}
+#burger:checked + label + nav{
+    display: block;
+}
+menu{
+    text-align: center;
+}
+.header__form{
+    margin-bottom: 0;
+}
+header__text-container-1{
+    margin-top: 260px;
+}
+header__text-container-2{
+    display: flex;
+}
+
+footer{
+    color: #FFFFFF;
+    background: #000000;
+}
+.footer__form{
+    margin-top: 0;
+    height: 341px;
+}
+.footer__text{
+    display: flex;
+    margin-top: 83px;
+    height: 83px;
+    background-color: #E5E5E5;
+    color: #000000;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 320px){
+    .header{
+        align-items: center;
+    }
 }

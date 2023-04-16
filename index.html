@@ -11,7 +11,15 @@
 </head>
 <body>
     <header>
-        <div class="header_logo"><div class="logo_image"><img src="img/Group 1.png" alt="logo_image"></div><p>jetair</p></div>
+      <div class="header__container">
+        <div class="header-logo">
+          <div class="logo-image">
+            <img src="img/Group 1.png" alt="logo-image">
+          </div>
+          <p>jetair</p>
+        </div>
+        <input type="checkbox" id="burger">
+        <label for="burger" > ☰</label>
         <nav class="menu">
             <ul>
               <li><a href="#">Наши услуги</a></li>
@@ -21,12 +29,44 @@
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
-    </header>
+          <p>8 800 123-45-67</p>
+          <div class="header__text-container-1">
+            <h1>Сайт для тестовой верстки чартерной авиакомпании </h1>
+            <p>Jetair — лидер в области чартерных VIP перелетов 
+              по всему миру. Компания основана в 1996 году.</p>
+          </div>
+          <div class="heder__text-container-2">
+            <img src="img/Слой_x0020_1.png" alt="Медаль">
+            <h3>Лидер рынка</h3>
+            <p>№1 среди чартерных авиакомпаний
+              по версии Flight Scaner magazine </p>
+          </div>
+          <form classs= "header__form" action="/login" method="post">
+            <h1>Забронировать частный борт</h1>
+            <input type="text" name="name" placeholder="Имя"id="form__name" required>
+            <input type="text" name="company" placeholder="Компания" id="form__compay" required>
+            <input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required>
+            <input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a>
+            <button type="submit">Забронировать</button>
+          </form>
+        </div>
+        </header>
     <main>
 
     </main>
     <footer>
-
+      <form classs= "footer__form" action="/login" method="post">
+        <h1>Забронировать частный борт</h1>
+        <input type="text" name="name" placeholder="Имя"id="form__name" required>
+        <input type="text" name="company" placeholder="Компания" id="form__compay" required>
+        <input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required>
+        <input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a>
+        <button type="submit">Забронировать</button>
+      </form>
+      <div class="footer__text">
+        <p>© Jetair — сайт для тестовой верстки чартерной авиакомпании</p>
+        <p>Политика конфиденциальности</p>
+      </div>
     </footer>
 </body>
 </html>
