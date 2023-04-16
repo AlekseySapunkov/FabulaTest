@@ -13,6 +13,10 @@ h1{
     font-style: normal;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 header{
     display: flex;
     width: 100%;
@@ -26,6 +30,11 @@ header{
 }
 .header__container{
 }
+.header__container-nav-logo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .header-logo{
     display: flex;
     width: 156px;
@@ -38,8 +47,32 @@ header{
 nav{
     display: none;
 }
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+[for=burger]{
+    text-align: center;
+    margin-left: 50px;
+    width: 18px;
+    height: 18px;
+}
+[for=burger]::before{
+    content: '☰';
+}
+#burger{
+    display: none;
+}
 #burger:checked + label + nav{
-    display: block;
+    display: flex;
+}
+#burger:checked + [for=burger]::before{
+    content: '×';
+    margin-right: 50px;
 }
 menu{
     text-align: center;
