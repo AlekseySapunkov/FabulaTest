@@ -30,6 +30,9 @@ header{
     justify-content: center;
     align-items: center;
 }
+.header__container{
+    margin-top: 55px;
+}
 .header__container-nav-logo{
     display: flex;
     width: 100%;
@@ -78,7 +81,7 @@ menu{
     text-align: center;
 }
 .header__form{
-    margin-bottom: 0;
+    bottom: 125px;
     height: 341px;
 }
 .header__text-container-1{
@@ -94,7 +97,8 @@ menu{
     padding-top: 0;
 }
 .main__service{
-    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 100px;
     text-align: center;
     background: #FFFFFF;
 }
@@ -128,10 +132,16 @@ menu{
 }
 .main__airplane{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
 }
 .main__airplane__wrapper{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 405px;
+    margin-right: 405px;
     justify-content: center;
     text-align: left;
     padding: auto;
