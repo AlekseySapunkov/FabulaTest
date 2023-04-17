@@ -5,7 +5,7 @@
 }
 body{
     font: 'Jost', sans-serif;
-    background-color: #E5E5E5;
+    background-color:#FFFFFF;
     width: 100%;
 }
 h1{
@@ -29,6 +29,7 @@ header{
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    padding-bottom: 125px;
 }
 .header__container{
     margin-top: 55px;
@@ -40,12 +41,14 @@ header{
 }
 .header-logo{
     display: flex;
+    align-items: flex-start;
     width: 156px;
     height: 111px;
-    text-transform: uppercase;
     color: #FFFFFF;
-    font-weight: 900;
     padding: auto;
+}
+.logo-image{
+    display: flex;
 }
 nav{
     display: none;
@@ -59,10 +62,9 @@ nav ul{
     gap: 32px;
 }
 [for=burger]{
-    text-align: center;
+    align-items: flex-start;
     margin-left: 50px;
-    width: 18px;
-    height: 18px;
+    font-size: 32px;
 }
 [for=burger]::before{
     content: '☰';
@@ -135,23 +137,60 @@ menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: auto;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding-top: 100px;
 }
 .main__airplane__wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 405px;
-    margin-right: 405px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     text-align: left;
-    padding: auto;
     column-gap: 20px;
     row-gap: 60px;
 }
-.card{
+.card img{
+    width: 350px;
+    height: 233px;
+}
+.main__partners{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.main__contacts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    padding-top: 100px;
+    background: #808080;
+    padding-bottom: 150px;
+    color: #FFFFFF;
 
 }
+.main__contacts__contacts{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
 
+}
+.main__contacts__contacts__text{
+    text-align: left;
+    margin-right: 52px;
+}
+.main__partners__logo{
+    display: flex;
+    justify-content: space-between;
+}
+#map{
+    width: 730px;
+    height: 450px;
+}
 footer{
     color: #FFFFFF;
     background: #000000;
@@ -159,12 +198,16 @@ footer{
 .footer__form{
     margin-top: 0;
     height: 341px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .footer__text{
     display: flex;
     margin-top: 83px;
     height: 83px;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
     color: #000000;
     justify-content: space-around;
     align-items: center;

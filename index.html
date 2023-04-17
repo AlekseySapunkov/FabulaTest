@@ -7,7 +7,8 @@
     <meta name="description" content="Jetair — лидер в области чартерных VIP перелетов по всему миру.">
     <title>Jetair</title>
     <link rel="stylesheet" href="src/styles.css">
-    <script src="src/index.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cd8cc1b2-3698-4bab-b838-d3bea05cbf36" type="text/javascript"></script>
+    <script type="text/javascript" src="src/map.js"></script>
 </head>
 <body>
     <header>
@@ -16,20 +17,20 @@
         <div class="header-logo">
           <div class="logo-image">
             <img src="img/Group 1.png" alt="logo-image">
+            <b>JETAIR</b>
           </div>
-          <p>jetair</p>
+          <input type="checkbox" id="burger">
+          <label for="burger" ></label>
+          <nav class="menu">
+              <ul>
+                <li><a href="#">Наши услуги</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Наш авиапарк</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
         </div>
-        <input type="checkbox" id="burger">
-        <label for="burger" ></label>
-        <nav class="menu">
-            <ul>
-              <li><a href="#">Наши услуги</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Наш авиапарк</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
           <p class="phone">8 800 123-45-67</p>
         </div>
           <div class="header__text-container-1">
@@ -146,18 +147,53 @@
           </div>
         </div>
       </div>
-      <div class="main__partners"></div>
-      <div class="main__contacts"></div>
+      <div class="main__partners">
+        <h1>Клиенты</h1>
+        <p>Престижный клуб постоянных клиентов Jetair 
+          стабильно расширяется. Наши клиенты ценят 
+          в партнере надежность, качество 
+          и ориентированы на долгосрочное 
+          сотрудничество. 
+        </p>
+        <div class="main__partners__logo">
+        <img src="img/transneft 1.png" alt="">
+        <img src="img/image 4.png" alt="">
+        <img src="img/SGT_logo_CMYK-01 1.png" alt="">
+        <img src="img/lukoil.png" alt="">
+        <img src="img/psb 1.png" alt="">
+        <img src="img/Severstal_Cy_cmyk_sml 1.png" alt="">
+        <img src="img/kaustik.png" alt="">
+        <img src="img/SCB Logo New RU 1.png" alt="">
+        </div>
+      </div>
+      <div class="main__contacts">
+        <h1>Контакты</h1>
+        <div class="main__contacts__contacts">
+          <div class="main__contacts__contacts__text">
+          <b>8 800 123-45-67<br> 
+            +7 123 456-78-90</b>
+          <p>Адрес
+            Московская обл., г. Химки, а/п Шереметьево, 
+            терминал А</p>
+          <p>E-mail<br>
+            mail@jetair.ru</p>
+          </div>
+        <div id="map">
+        </div>
+      </div>
+      </div>
     </main>
     <footer>
+      <div class= "footer__form">
       <h1>Забронировать частный борт</h1>
-      <form classs= "footer__form" action="/login" method="post">
+      <form  action="/login" method="post">
         <input type="text" name="name" placeholder="Имя"id="form__name" required>
         <input type="text" name="company" placeholder="Компания" id="form__compay" required>
         <input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required>
         <input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a>
         <button type="submit">Забронировать</button>
       </form>
+    </div>
       <div class="footer__text">
         <p>© Jetair — сайт для тестовой верстки чартерной авиакомпании</p>
         <p>Политика конфиденциальности</p>
