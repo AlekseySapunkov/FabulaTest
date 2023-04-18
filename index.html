@@ -47,14 +47,16 @@
               </p>
             </div>
           </div>
+          <div class= "header__form">
           <h1>Забронировать частный борт</h1>
-          <form classs= "header__form" action="/login" method="post">
-            <input type="text" name="name" placeholder="Имя"id="form__name" required>
-            <input type="text" name="company" placeholder="Компания" id="form__compay" required>
-            <input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required>
-            <input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a>
-            <button type="submit">Забронировать</button>
+          <form  action="/login" method="post">
+            <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" required></div>
+            <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" required></div>
+            <div class="input"><input type="phone" name="phone-number" placeholder="Телефон" id="form__phone" required></div>
+            <div class="input"><button type="submit">Забронировать</button></div>
+            <div><input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a></div>
           </form>
+        </div>
         </div>
         </header>
     <main>

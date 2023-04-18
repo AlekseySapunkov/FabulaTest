@@ -28,8 +28,7 @@ header{
     display: flex;
     color: #FFFFFF;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 125px;
+    height: 1280px;
 }
 .header__container{
     margin-top: 55px;
@@ -49,6 +48,7 @@ header{
 }
 .logo-image{
     display: flex;
+    margin-top: 10px;
 }
 nav{
     display: none;
@@ -83,8 +83,42 @@ menu{
     text-align: center;
 }
 .header__form{
-    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 40px;
     height: 341px;
+}
+form{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+input[type=text] {
+    box-sizing: border-box;
+    width:255px;
+    height: 50px;
+    left: 56px;
+    top: 148px;
+    border-radius: 5px;
+    background-color: #C4C4C4;
+  }
+input[type=phone] {
+    box-sizing: border-box;
+    width: 255px;
+    height: 50px;
+    left: 280px;
+    top: 148px;
+    border-radius: 5px;
+    background-color: #C4C4C4;
+  }
+button[type=submit]{
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 255px;
+    height: 50px;
+    background-color: #15468D;
+    color: #FFFFFF;
 }
 .header__text-container-1{
     margin-top: 2%;
@@ -96,7 +130,6 @@ menu{
     text-align: left;
     margin-top: 10%;
     width: 35%;
-    padding-top: 0;
 }
 .main__service{
     margin-top: 0;
