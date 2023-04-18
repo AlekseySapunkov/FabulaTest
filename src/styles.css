@@ -11,6 +11,7 @@ body{
 h1{
     font-style: normal;
     font-weight: 700;
+    font-size: 36px;
 }
 h2{
     font-weight: 700;
@@ -26,12 +27,15 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     color: #FFFFFF;
     justify-content: center;
-    height: 1280px;
+    min-height: fit-content;
 }
 .header__container{
     margin-top: 55px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .header__container-nav-logo{
     display: flex;
@@ -55,7 +59,6 @@ nav{
 }
 nav ul{
     display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
     flex-direction: row;
     align-items: flex-start;
@@ -86,21 +89,24 @@ menu{
 .header__form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 40px;
     height: 341px;
-    background-color: #000000;
 }
 form{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
 }
 input[type=text] {
     box-sizing: border-box;
     width:255px;
-    height: 50px;
+    max-height: 50px;
+    min-height: 40px;
     left: 56px;
     top: 148px;
     border-radius: 5px;
@@ -109,7 +115,8 @@ input[type=text] {
 input[type=phone] {
     box-sizing: border-box;
     width: 255px;
-    height: 50px;
+    max-height: 50px;
+    min-height: 40px;
     left: 280px;
     top: 148px;
     border-radius: 5px;
@@ -119,7 +126,8 @@ button[type=submit]{
     border-radius: 5px;
     box-sizing: border-box;
     width: 255px;
-    height: 50px;
+    max-height: 50px;
+    min-height: 40px;
     background-color: #15468D;
     color: #FFFFFF;
 }
@@ -191,7 +199,8 @@ button[type=submit]{
     row-gap: 60px;
 }
 .card img{
-    width: 350px;
+    max-width: 350px;
+    min-width: 280px;
     height: 233px;
 }
 .main__partners{
@@ -255,10 +264,16 @@ footer{
     align-items: center;
 }
 @media (max-width: 320px){
-    .header{
+    header{
         align-items: center;
     }
     .phone{
         display: none;
+    }
+    h1{
+        font-size: 24px;
+    }
+    nav ul{
+        flex-direction: column;
     }
 }
