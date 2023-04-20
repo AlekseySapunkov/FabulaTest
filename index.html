@@ -39,7 +39,7 @@
               по всему миру. Компания основана в 1996 году.</p>
           </div>
           <div class="header__text-container-2">
-            <img src="img/Слой_x0020_1.png" alt="Медаль">
+            <img src="img/Слой_x0020_1.png" height="60px" width="53px"alt="Медаль">
             <div class="header__text-container-2__text">
               <h3>Лидер рынка</h3>
               <p>№1 среди чартерных авиакомпаний
@@ -49,13 +49,15 @@
           </div>
         </div>
         <div class= "header__form">
-          <h1>Забронировать частный борт</h1>
           <form  action="/login" method="post">
+            <h1>Забронировать частный борт</h1>
+            <div class="form">
             <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" required></div>
             <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" required></div>
             <div class="input"><input type="phone" name="phone-number" placeholder="Телефон" id="form__phone" required></div>
             <div class="input"><button type="submit">Забронировать</button></div>
             <div><input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a></div>
+          </div>
           </form>
         </div>
         </header>
@@ -70,6 +72,54 @@
 <div class="main__service__img__image" id="img-2"><p>Аренда вертолета</p></div>
 <div class="main__service__img__image" id="img-3"><p>Перевозка центостей</p></div>
 <div class="main__service__img__image" id="img-4"><p>Трансфер и сопровождение</p></div>
+        </div>
+        <div class="main__service__text-cards">
+        <h1>Компания</h1>
+        <h2>Ощутите уникальные преимущества 
+          и высочайший комфорт, доверив свой полет
+          профессионалам</h2>
+        <p>За многие годы работы на рынке чартерных перевозок авиакомпания Jetair зарекомендовала себя 
+          надежным и безопасным перевозчиком с высоким уровнем сервиса на борту воздушного судна, 
+          выполняя заказные рейсы не только в различные регионы РФ, но и в страны Восточной и Западной 
+          Европы, Центральной и Восточной Азии.</p>
+          <div class="card-wrapper">
+            <div class="main__service__card">
+              <img src="img/goblet.png" alt="">
+              <p>Команда профессионалов с опытом 
+                работы в сфере бизнес-авиации 
+                более 20 лет.</p>
+            </div>
+            <div class="main__service__card">
+              <img src="img/icon-06 1.png" alt="">
+              <p>Исключительное качество 
+                сервиса – высшая ценность нашей 
+                работы. Мы не просто следуем 
+                самым высоким мировым 
+                стандартам качества. Мы подняли 
+                планку еще выше, что позволяет 
+                нам превосходить ожидания самых 
+                взыскательных клиентов.</p>
+            </div>
+            <div class="main__service__card">
+              <img src="img/icon-03 1.png" alt="">
+              <p>Ваш личный менеджер уделит 
+                особое внимание Вашим 
+                потребностям и пожеланиям. 
+                Каждая деталь Вашего путешествия 
+                будет продумана до мелочей, чтобы 
+                Вы могли полностью насладиться 
+                полетом</p>
+            </div>
+            <div class="main__service__card">
+              <img src="img/icon-04 1.png" alt="">
+              <p>Ваша безопасность – наша 
+                первоочередная задача. Мы 
+                выбираем самых надежных 
+                партнеров, которые отвечают самым 
+                строгим требованиям безопасности 
+                полетов.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="main__airplane">
@@ -185,6 +235,12 @@
         <img src="img/kaustik.png" alt="">
         <img src="img/SCB Logo New RU 1.png" alt="">
         </div>
+        <div class="feetback"><p>Отзыв от компании «Леруа Мерлен». На российский рынок компания 
+          вышла в 2004 году, открыв первый магазин в городе Мытищи.
+           Активное развитие сети началось с 2005 года.
+            К 2006 году компания вышла на первое место среди DIY-сетей по ассортименту, обороту и объёму продаж на м². 
+            Гипермаркеты «Леруа Мерлен» зачастую организуются на одних площадках с «Ашан», их площадь колеблется от 8000 до 20 000 м².</p>
+          </div>
       </div>
       <div class="main__contacts">
         <h1>Контакты</h1>
@@ -204,15 +260,19 @@
       </div>
     </main>
     <footer>
-      <div class= "header__form">
-      <h1>Забронировать частный борт</h1>
+      <div class= "footer__form">
+        <div class="wrap">
       <form  action="/login" method="post">
+        <h1>Забронировать частный борт</h1>
+        <div class="form">
         <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" required></div>
         <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" required></div>
         <div class="input"><input type="phone" name="phone-number" placeholder="Телефон" id="form__phone" required></div>
         <div class="input"><button type="submit">Забронировать</button></div>
         <div><input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#">персональных данных</a></div>
+      </div>
       </form>
+    </div>
     </div>
       <div class="footer__text">
         <p>© Jetair — сайт для тестовой верстки чартерной авиакомпании</p>
