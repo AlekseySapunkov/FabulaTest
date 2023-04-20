@@ -182,6 +182,7 @@ button[type=submit]:hover{
 }
 .card-wrapper{
     display: flex;
+    padding-bottom: 150px;
 }
 .main__service__img{
     display: flex;
