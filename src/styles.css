@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif;
     background-color:#FFFFFF;
     width: 100%;
 }
@@ -20,11 +20,19 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+a:hover{
+    color: #329FD9;
+
+}
+p{
+    font-size: 16px;
+}
 header{
     display: flex;
     width: 100%;
     background-image: url(../img/bg1.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -162,6 +170,10 @@ button[type=submit]{
     height: 415px;
     width: 555px;
     border-radius: 0px;
+    display: flex;
+    align-items: end;
+    padding-left: 40px;
+    padding-bottom: 40px;
 
 }
 #img-1{
@@ -204,8 +216,44 @@ button[type=submit]{
     height: 233px;
 }
 .main__partners{
+    display: flex;
     text-align: center;
     background-color: #FFFFFF;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#about-clients h1{
+    margin-top: 100px;
+}
+#about-clients p{
+    width: 552px;
+}
+.client-logo{
+    display: flex;
+}
+#about-clients{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.feetback-with-logo{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feetback-text{
+    display: flex;
+    justify-content: center;
+    width: 540px;
+    background: #E5E5E5;
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px 20px 30px 20px;
+    margin: auto;
 }
 .main__contacts{
     display: flex;
@@ -232,6 +280,7 @@ button[type=submit]{
 .main__partners__logo{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .main__partners__logo>img{
     max-width: 350px;
