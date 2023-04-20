@@ -53,7 +53,9 @@ header{
 }
 .header__container{
     margin-top: 55px;
-    width: max-content;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .header__text-container-1>p{
     margin-top: 30px;
@@ -184,6 +186,9 @@ button[type=submit]:hover{
     display: flex;
     padding-bottom: 150px;
 }
+.main__service__text-cards{
+    margin-top: 100px;
+}
 .main__service__img{
     display: flex;
     flex-wrap: wrap;
@@ -233,12 +238,13 @@ button[type=submit]:hover{
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     justify-content: center;
     text-align: left;
     column-gap: 20px;
     row-gap: 60px;
+    margin-bottom: 150px;
 }
 .card img{
     max-width: 350px;
@@ -253,12 +259,16 @@ button[type=submit]:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 #about-clients h1{
     margin-top: 100px;
 }
 #about-clients p{
     width: 552px;
+
 }
 .client-logo{
     display: flex;
@@ -275,6 +285,75 @@ button[type=submit]:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.arrow-main{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.left-arrow, 
+.right-arrow {
+  display: inline-flex;
+  position: relative;
+  width: 65px;
+  height: 0px;
+  cursor: pointer;
+}
+
+.left-arrow::before,
+.right-arrow::before,
+.left-arrow::after,
+.right-arrow::after {
+  display: inline-flex;
+  position: absolute;
+  content: '';
+}
+
+
+.left-arrow::before,
+.right-arrow::before {
+  top: 8px;
+  left: 0;
+  width: 65px;
+  height: 3px;
+  background-color: #C4C4C4; 
+}
+
+.left-arrow::after,
+.right-arrow::after {
+  width: 10px;
+  height: 10px;
+  top: 3px;
+}
+
+.left-arrow::after {
+  left: 0;
+  border-top: 3px solid #C4C4C4;
+  border-left: 3px solid #C4C4C4;
+  transform: rotate(-45deg);
+}
+
+.right-arrow::after {
+  right: 0;
+  border-top: 3px solid #C4C4C4;
+  border-right: 3px solid #C4C4C4;
+  transform: rotate(45deg);
+}
+
+
+.left-arrow:hover::before,
+.right-arrow:hover::before {
+  background-color: #329FD9; 
+}
+
+.left-arrow:hover::after {
+  border-top: 3px solid #329FD9;
+  border-left: 3px solid #329FD9;
+}
+
+.right-arrow:hover::after {
+  border-top: 3px solid #329FD9;
+  border-right: 3px solid #329FD9;
 }
 .feetback-text{
     display: flex;
@@ -313,6 +392,9 @@ button[type=submit]:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-bottom: 150px;
 }
 .main__partners__logo>img{
     max-width: 350px;
@@ -364,5 +446,8 @@ footer{
     }
     nav ul{
         flex-direction: column;
+    }
+    .main__partners__logo{
+        display: none;
     }
 }
