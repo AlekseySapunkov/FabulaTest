@@ -78,12 +78,13 @@ nav{
     display: none;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+    padding-right: 30px;
 }
 nav ul{
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 32px;
 }
@@ -142,6 +143,9 @@ input[type=phone] {
     border-radius: 5px;
     background-color: #C4C4C4;
   }
+input[type=text]:focus, input[type=phone]:focus{
+    background-color: #FFFFFF;
+}
 button[type=submit]{
     border-radius: 5px;
     box-sizing: border-box;
@@ -150,6 +154,10 @@ button[type=submit]{
     min-height: 40px;
     background-color: #15468D;
     color: #FFFFFF;
+}
+button[type=submit]:hover{
+    background-color: #329FD9;
+
 }
 .header__text-container-1{
     margin-top: 2%;
