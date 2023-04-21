@@ -193,14 +193,7 @@ button[type=submit]:hover{
     margin-top: 100px;
 }
 .main__service__img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: auto;
-    width: 100%;
-    margin-top: 80px;
     color: #FFFFFF;
-    overflow: hidden;
 }
 .main__service p{
     text-align: left;
