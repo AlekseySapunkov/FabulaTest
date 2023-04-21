@@ -30,6 +30,9 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+a>p{
+    text-decoration: underline;
+}
 a:hover{
     color: #329FD9;
 
@@ -204,12 +207,15 @@ button[type=submit]:hover{
 }
 .main__service__img__image{
     height: 415px;
-    width: 555px;
+    width: 100%;
     border-radius: 0px;
     display: flex;
     align-items: flex-end;
     padding-left: 40px;
     padding-bottom: 40px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
 }
 #img-1{
     background-image: url('../img/1.png');
@@ -272,12 +278,17 @@ button[type=submit]:hover{
 }
 .client-logo{
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
+    width: min-content;
+    row-gap: 40px;
 }
 #about-clients{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .feetback-with-logo{
@@ -286,10 +297,17 @@ button[type=submit]:hover{
     flex-wrap: wrap;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 40px;
+}
+.logo-wrap{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px ;
 }
 .arrow-main{
     display: flex;
     flex-wrap: nowrap;
+    gap: 30px;
 }
 .left-arrow, 
 .right-arrow {
