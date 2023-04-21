@@ -178,6 +178,7 @@ button[type=submit]:hover{
     min-width: 108px;
 }
 .main__service{
+    height: max-content;
     margin-top: 0;
     padding-top: 100px;
     background: #FFFFFF;
@@ -193,17 +194,24 @@ button[type=submit]:hover{
     margin-top: 100px;
 }
 .main__service__img{
+    min-height: 0;
     color: #FFFFFF;
 }
 .main__service p{
     text-align: left;
 }
 .swiper{
-    min-height: 0;
+    max-height: max-content;
+}
+.swiper-wrapper{
+    min-height: 100%;
+    padding: 30px;
 }
 .main__service__img__image{
     height: 415px;
+    min-width: 0;
     width: 500px;
+    max-width: 100%;
     border-radius: 0px;
     display: flex;
     align-items: flex-end;

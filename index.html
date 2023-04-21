@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/styles.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cd8cc1b2-3698-4bab-b838-d3bea05cbf36" type="text/javascript"></script>
     <script type="text/javascript" src="src/map.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -67,7 +68,6 @@
         <p>Jetair – профессионал в области организации чартерных VIP перелетов по всему миру: от Европы 
           до Азии, от Австралии до Америки. Богатый опыт и знание всех нюансов позволяют нам осуществить 
           любое пожелание клиента. Для нас нет ничего невозможного.</p>
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
         <div class="main__service__img swiper">
           <div class="swiper-wrapper">
 <div class="main__service__img__image swiper-slide" id="img-1"><p>Чартерные рейсы</p></div>
@@ -78,6 +78,10 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+        <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+          const swiper = new Swiper('.swiper')</script>
         <div class="main__service__text-cards">
         <h1>Компания</h1>
         <h2>Ощутите уникальные преимущества 
