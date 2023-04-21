@@ -194,18 +194,18 @@ button[type=submit]:hover{
     margin-top: 100px;
 }
 .main__service__img{
-    min-height: 0;
+    min-width: 0;
     color: #FFFFFF;
 }
 .main__service p{
     text-align: left;
 }
 .swiper{
-    max-height: max-content;
+    min-width: 0;
+   height: 415px;
 }
 .swiper-wrapper{
     min-height: 100%;
-    padding: 30px;
 }
 .main__service__img__image{
     height: 415px;
