@@ -205,16 +205,19 @@ button[type=submit]:hover{
 .main__service p{
     text-align: left;
 }
+.swiper{
+    min-height: 0;
+}
 .main__service__img__image{
     height: 415px;
-    width: 100%;
+    width: 500px;
     border-radius: 0px;
     display: flex;
     align-items: flex-end;
     padding-left: 40px;
     padding-bottom: 40px;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
 }
 #img-1{

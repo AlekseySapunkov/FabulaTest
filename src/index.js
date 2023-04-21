@@ -1,3 +1,5 @@
-import map from "./map"
-
-map();
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+  swiper.slideNext();
