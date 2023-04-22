@@ -342,6 +342,9 @@ button[type=submit]:hover{
     gap: 30px;
     width: 150px;
 }
+.arrow-main-mobile{
+    display: none;
+}
 .logo-wrap-text{
     width: 100%;
 }
@@ -529,5 +532,23 @@ footer{
     .feetback-text{
         width: 280px;
         margin-left: 0;
+    }
+    #map{
+        width: 280px;
+    }
+    .footer__form{
+        justify-content: center;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .arrow-main{
+        display: none;
+    }
+    .arrow-main-mobile{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        width: 150px;
+        margin-bottom: 60px;
     }
 }
