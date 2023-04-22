@@ -25,10 +25,15 @@ h1{
 h2{
     font-weight: 400;
     line-height: 39px;
+    font-size: 27px;
 }
 a{
     text-decoration: none;
     color: #FFFFFF;
+}
+b{
+    font-size: 27px;
+    line-height: 39px;
 }
 a>p{
     text-decoration: underline;
@@ -78,9 +83,15 @@ header{
 }
 .logo-image{
     display: flex;
+    height: 111px;
 }
 nav{
-    display: none;
+    display: none; 
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     padding-right: 30px;
@@ -91,7 +102,8 @@ nav ul{
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 32px;
+    justify-content: space-between;
+    gap: 20px;
 }
 [for=burger]{
     align-items: flex-start;
@@ -106,6 +118,7 @@ nav ul{
 }
 #burger:checked + label + nav{
     display: flex;
+    justify-content: space-around;
 }
 #burger:checked + [for=burger]::before{
     content: '×';
@@ -186,14 +199,28 @@ button[type=submit]:hover{
     padding-right: 20%;
     text-align: center;
 }
+.main__service>h1{
+    margin-bottom: 40px;
+}
 .card-wrapper{
+    margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 150px;
+    gap: 20px;
+}
+.main__service__card{
+    width: 260px;
 }
 .main__service__text-cards{
     margin-top: 100px;
 }
+.main__service__text-cards>h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .main__service__img{
+    margin-top: 80px;
     min-width: 0;
     color: #FFFFFF;
 }
@@ -209,9 +236,7 @@ button[type=submit]:hover{
 }
 .main__service__img__image{
     height: 415px;
-    min-width: 0;
     width: 500px;
-    max-width: 100%;
     border-radius: 0px;
     display: flex;
     align-items: flex-end;
@@ -220,6 +245,11 @@ button[type=submit]:hover{
     background-position: 50% 50%;
     background-size: cover;
     color: #FFFFFF;
+}
+.main__service__img__image>p{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
 }
 #img-1{
     background-image: url('../img/1.png');
@@ -257,9 +287,9 @@ button[type=submit]:hover{
     margin-bottom: 150px;
 }
 .card img{
-    max-width: 350px;
-    min-width: 280px;
+    width: 350px;
     height: 233px;
+    margin-bottom: 20px;
 }
 .main__partners{
     display: flex;
@@ -269,23 +299,20 @@ button[type=submit]:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 #about-clients h1{
     margin-top: 100px;
-}
-#about-clients p{
-    width: 552px;
-
+    margin-bottom: 27px;
 }
 .client-logo{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: left;
-    width: min-content;
     row-gap: 40px;
+    width: 50%;
 }
 #about-clients{
     display: flex;
@@ -293,25 +320,30 @@ button[type=submit]:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .feetback-with-logo{
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 40px;
 }
 .logo-wrap{
     display: flex;
-    justify-content: space-around;
     gap: 20px ;
+    width: 50%;
 }
 .arrow-main{
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    width: 150px;
+}
+.logo-wrap-text{
+    width: 100%;
 }
 .left-arrow, 
 .right-arrow {
@@ -380,35 +412,38 @@ button[type=submit]:hover{
 .feetback-text{
     display: flex;
     justify-content: center;
-    width: 540px;
+    width: 47%;
     background: #E5E5E5;
     border-radius: 20px;
     text-align: left;
     padding: 20px 20px 30px 20px;
-    margin: auto;
     text-align: left;
 }
 .main__contacts{
     display: flex;
-    justify-content: center;
     text-align: center;
     flex-flow: column;
     padding-top: 100px;
     background: #808080;
     padding-bottom: 150px;
     color: #FFFFFF;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
 
 }
 .main__contacts__contacts{
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
 }
 .main__contacts__contacts__text{
     text-align: left;
     margin-right: 52px;
+    margin-bottom: 30px;
+    justify-content: left;
 }
 .main__partners__logo{
     display: flex;
@@ -421,19 +456,8 @@ button[type=submit]:hover{
 .main__partners__logo>img{
     max-width: 350px;
 }
-.feetback{
-    width: 540px;
-    height: 211px;
-    border-radius: 20px;
-    background: #E5E5E5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 20px 20px 30px 20px;
-}
 #map{
-    width: 730px;
+    width: 62%;
     height: 450px;
 }
 footer{
@@ -460,8 +484,17 @@ footer{
     header{
         align-items: center;
     }
+    .header__container{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
     .phone{
         display: none;
+    }
+    .header__form{
+        justify-content: center;
+        padding-left:20px;
+        padding-right: 20px;
     }
     h1{
         font-size: 24px;
@@ -471,5 +504,30 @@ footer{
     }
     .main__partners__logo{
         display: none;
+    }
+    .main__service{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .main__airplane__wrapper{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .card img{
+        width: 280px;
+    }
+    .main__partners{
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main__contacts{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .feetback-text{
+        width: 280px;
+        margin-left: 0;
     }
 }
