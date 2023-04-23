@@ -95,13 +95,13 @@
 <div class="main__service__img__image " id="img-4"><p>Трансфер и сопровождение</p></div>
           </div>
         </div>
-        <script type="module">
+         <script type="module">
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
           let mql = window.matchMedia('(max-width: 800px)');
           let newSwiper = null;
           window.addEventListener('resize', () => {
           if (mql.matches && newSwiper === null) {          
-            let newSwiper = new Swiper('.swiper', {
+             newSwiper = new Swiper('.swiper', {
               grabCursor: true,
               init: true
               });
