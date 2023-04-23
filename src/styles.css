@@ -520,8 +520,8 @@ footer{
         background-color: #000000;
         padding-top: 30px;
         justify-content: center;
-        padding-left:20px;
-        padding-right: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     h1{
         font-size: 24px;
@@ -567,8 +567,8 @@ footer{
     }
     .footer__form{
         justify-content: center;
-        padding-left:20px;
-        padding-right: 20px;
+        padding-left:  12px;
+        padding-right: 12px;
     }
     .arrow-main{
         display: none;
