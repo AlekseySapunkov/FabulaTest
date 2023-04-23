@@ -175,6 +175,49 @@ button[type=submit]:hover{
     background-color: #329FD9;
 
 }
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 700px;
+    height: 400px;
+    background-color: #FFFFFF;
+    text-align: center;
+    overflow: auto;
+    color: #000000;
+}
+.modal-content{
+    margin: 20% 20%;
+
+}
+.modal__close-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+.modal__close-button:hover {
+    opacity: 1;
+  }
+  .modal__close-button:before, .modal__close-button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 32px;
+    width: 2px;
+    background-color: #333;
+  }
+  .modal__close-button:before {
+    transform: rotate(45deg);
+  }
+  .modal__close-button:after {
+    transform: rotate(-45deg);
+  }
 .header__text-container-1{
     margin-top: 2%;
     text-align: left;
@@ -642,5 +685,9 @@ footer{
     .main__service__text-cards{
         padding-left: 7%;
         padding-right: 7%;
+    }
+    .card-wrapper{
+        justify-content: center;
+        align-items: center;
     }
 }
