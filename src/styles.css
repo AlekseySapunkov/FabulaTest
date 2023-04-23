@@ -189,8 +189,10 @@ button[type=submit]:hover{
     color: #000000;
 }
 .modal-content{
-    margin: 20% 20%;
-
+    margin: 20% 20% ;
+}
+.modal-content h1{
+    margin-bottom: 30px;
 }
 .modal__close-button{
     position: absolute;
@@ -525,7 +527,7 @@ div .swiper{
     max-width: 350px;
 }
 #map{
-    width: 730px;
+    width: 700px;
     height: 450px;
 }
 footer{
@@ -689,5 +691,9 @@ footer{
     .card-wrapper{
         justify-content: center;
         align-items: center;
+    }
+    .modal{
+        width: 100%;
+        height: 30%;
     }
 }
