@@ -224,6 +224,9 @@ button[type=submit]:hover{
 .main__service p{
     text-align: left;
 }
+div .swiper{
+    display: none;
+}
 .swiper{
     min-width: 0;
    height: 415px;
@@ -607,5 +610,8 @@ footer{
     }
     input[type=text], input[type=phone], button[type=submit]{
         width: 100%;
+    }
+    div .swiper{
+        display: block;
     }
 }

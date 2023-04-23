@@ -82,6 +82,13 @@
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
           let mql = window.matchMedia('(max-width: 800px)');
           let newSwiper = null;
+          let innerWidth = window.innerWidth;
+          const changeClassByWidth = (width) =>{
+            if(width > 800){
+              document.querySelector(".main__service__img").classList.remove(".swiper");
+              document.querySelector(".main__service__img__img").classList.remove(".swiper-slide");
+            }
+          }
           window.addEventListener('resize', () => {
           if (mql.matches && newSwiper === null) {          
             let newSwiper = new Swiper('.swiper', {
