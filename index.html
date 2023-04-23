@@ -80,8 +80,20 @@
         </div>
         <script type="module">
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-
-          const swiper = new Swiper('.swiper')
+          let mql = window.matchMedia('(max-width: 800px)');
+          let newSwiper = null;
+          window.addEventListener('resize', () => {
+          if (mql.matches && newSwiper === null) {          
+            let newSwiper = new Swiper('.swiper', {
+              grabCursor: true,
+              init: true
+              });
+            } else if(!mql.matches && newSwiper !== null) {
+                newSwiper.destroy();
+                newSwiper = null;
+              }
+              return
+            })
           </script>
         <div class="main__service__text-cards">
         <h1>Компания</h1>
