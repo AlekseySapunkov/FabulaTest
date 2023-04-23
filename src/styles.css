@@ -203,20 +203,42 @@ button[type=submit]:hover{
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 150px;
     gap: 20px;
 }
 .main__service__card{
     width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__service__card img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 22px;
 }
 .main__service__text-cards{
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .main__service__text-cards>h2{
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: center;
+}
+.main__service__text-cards>h1{
+    text-align: center;
 }
 .main__service__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
     min-width: 0;
     color: #FFFFFF;
@@ -613,5 +635,12 @@ footer{
     }
     div .swiper{
         display: block;
+    }
+    div .main__service__img{
+        display: none;
+    }
+    .main__service__text-cards{
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
