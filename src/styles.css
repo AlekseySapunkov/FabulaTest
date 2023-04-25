@@ -652,7 +652,7 @@ footer{
         margin-left: 0;
     }
     #map{
-        width: 280px;
+        width: 100%;
     }
     .footer__form{
         justify-content: center;
