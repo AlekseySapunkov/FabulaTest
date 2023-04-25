@@ -195,8 +195,11 @@ button[type=submit]:hover{
     display: none;
     position: fixed;
     z-index: 1;
-    right: 0;
-    top: 0;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
     width: 700px;
     height: 400px;
     background-color: #FFFFFF;
