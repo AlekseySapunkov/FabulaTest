@@ -680,7 +680,7 @@ footer{
         position: relative;
         top: 0;
         right: 0;
-        align-items: center;
+        align-items: flex-start;
         padding-right: 0;
         background: none;
         color: #FFFFFF;
@@ -689,6 +689,10 @@ footer{
     .header-logo{
         width: 100%;
         justify-content: space-between;
+    }
+    .header__form{
+        padding-top: 0;
+        margin-top: 30px;
     }
     form{
         display: flex;
