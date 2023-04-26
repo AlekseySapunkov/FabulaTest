@@ -170,6 +170,11 @@ header{
     padding-left: 20%;
     margin-bottom: 10%;
 }
+.phone{
+    width: 130px;
+    display: flex;
+    margin-right: 0;
+}
 .form{
     display: flex;
     gap: 30px 20px;
