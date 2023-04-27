@@ -80,7 +80,7 @@ header{
     width: 100%;
 }
 .header-logo{
-    width: 100%;
+    width: 156px;
     display: flex;
     align-items: flex-start;
     height: 111px;
@@ -134,7 +134,7 @@ header{
  .menu__box{
     display: flex;
     visibility: hidden;
-    width: 582px;
+    width: 532px;
     text-decoration: none;
     list-style: none;
     margin-top: -15px;
@@ -159,8 +159,10 @@ header{
     transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .menu__box {
+    width: 582px;
     visibility: visible;
     margin-left: -50px;
+    margin-right: 1%;
   }
 .header__form{
     display: flex;
@@ -173,7 +175,6 @@ header{
 .phone{
     width: 130px;
     display: flex;
-    margin-right: 0;
 }
 .form{
     display: flex;
