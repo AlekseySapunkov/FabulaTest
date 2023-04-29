@@ -67,8 +67,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin-top: 55px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
     width: 100%;
 }
 .header__text-container-1>p{
@@ -78,6 +78,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-right: 0;
 }
 .header-logo{
     width: 156px;
@@ -162,7 +163,7 @@ header{
     width: 582px;
     visibility: visible;
     margin-left: -50px;
-    margin-right: 1%;
+
   }
 .header__form{
     display: flex;
@@ -170,39 +171,43 @@ header{
     height:max-content;
     margin-top: 10%;
     padding-left: 20%;
+    padding-right: 20%;
     margin-bottom: 10%;
 }
 .phone{
     width: 130px;
     display: flex;
+    margin-left: auto;
 }
 .form{
     display: flex;
     gap: 30px 20px;
     flex-wrap: wrap;
-    width: 90%;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 40px;
 }
 input[type=text] {
     padding-left: 10px;
     box-sizing: border-box;
     width:255px;
-    max-height: 50px;
-    min-height: 40px;
+    height: 50px;
     border-radius: 5px;
     border-width: 0;
     background-color: #C4C4C4;
   }
-input[type=phone] {
+input[type=tel] {
     padding-left: 10px;
     box-sizing: border-box;
     width: 255px;
-    max-height: 50px;
-    min-height: 40px;
+    height: 50px;
     border-radius: 5px;
     background-color: #C4C4C4;
   }
 input[type=text]:focus, input[type=phone]:focus{
+    background-color: #FFFFFF;
+}
+input[type=tel]:focus, input[type=phone]:focus{
     background-color: #FFFFFF;
 }
 input {
@@ -213,8 +218,7 @@ button[type=submit]{
     border-radius: 5px;
     box-sizing: border-box;
     width: 255px;
-    max-height: 50px;
-    min-height: 40px;
+    height: 50px;
     background-color: #15468D;
     color: #FFFFFF;
 }
@@ -271,14 +275,14 @@ button[type=submit]:hover{
     transform: rotate(-45deg);
   }
 .header__text-container-1{
-    margin-top: 2%;
+    margin-top: 160px;
     text-align: left;
     width: 45%;
 }
 .header__text-container-2{
     display: flex;
     text-align: left;
-    margin-top: 234px;
+    margin-top: 500px;
     margin-bottom: 200px;
     width: 85%;
     min-width: 108px;
@@ -302,6 +306,10 @@ button[type=submit]:hover{
 }
 .main__service>h1{
     margin-bottom: 40px;
+}
+.main__service>h1+p{
+    display: inline-block;
+    width: 726px;
 }
 .card-wrapper{
     margin-top: 60px;
@@ -334,6 +342,10 @@ button[type=submit]:hover{
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
+    width: 528px;
+}
+.main__service__text-cards>h2+p{
+    width: 721px;
 }
 .main__service__text-cards>h1{
     text-align: center;
@@ -362,7 +374,7 @@ div .swiper{
 }
 .main__service__img__image{
     height: 415px;
-    width: 500px;
+    width: 555px;
     border-radius: 0px;
     display: flex;
     align-items: flex-end;
@@ -448,6 +460,9 @@ div .swiper{
     align-items: center;
     width: 100%;
 }
+#about-clients h2{
+    width: 552px;
+}
 
 .feetback-with-logo{
     margin-top: 60px;
@@ -460,7 +475,7 @@ div .swiper{
 .logo-wrap{
     display: flex;
     gap: 20px ;
-    width: 50%;
+    width: 80%;
 }
 .arrow-main{
     display: flex;
@@ -517,7 +532,7 @@ div .swiper{
 }
 
 .right-arrow::after {
-  right: 0;
+  right: -3px;
   border-top: 3px solid #C4C4C4;
   border-right: 3px solid #C4C4C4;
   transform: rotate(45deg);
@@ -574,19 +589,23 @@ div .swiper{
     margin-bottom: 30px;
     justify-content: left;
 }
+.main__contacts__contacts__text>b+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .main__partners__logo{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     overflow: hidden;
     margin-left: 20%;
     margin-bottom: 150px;
+    margin-top: 60px;
 }
 .main__partners__logo>img{
     max-width: 350px;
 }
 #map{
-    width: 700px;
+    width: 730px;
     height: 450px;
 }
 footer{
@@ -598,6 +617,7 @@ footer{
     width: 100%;
     height:max-content;
     padding-left: 20%;
+    padding-right: 20%;
     padding-top: 50px;
 }
 .footer__text{
