@@ -126,11 +126,11 @@ header{
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: -18px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: 18px;
 }
  .menu__box{
     display: flex;
@@ -661,6 +661,9 @@ footer{
         padding-left: 12px;
         padding-right: 12px;
     }
+    .header-logo{
+        width: 156px;
+    }
     h1{
         font-size: 24px;
         line-height: 35px;
@@ -669,8 +672,44 @@ footer{
         font-size: 16px;
         line-height: 23px;
     }
-    nav ul{
+    .hamburger-menu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 200px;
+        margin-top: 0;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
+    }
+    #menu__toggle{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__box{
+        flex-direction: column;
+        width: 100%;
+        margin-top: -70px;
+        padding-top: 52px;
+        margin-left: auto;
+        height: fit-content;
+        align-items:flex-end;
+        text-align: center;
+        padding-left: 20px;
+        margin-right: -20px;
+        border-radius: 0%;
+        row-gap: 20px;
+    }
+    #menu__toggle:checked ~ .menu__box{
+        width: 150px;
+        margin-left: auto;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after{
+       right: 0;
+       top: 9px;
     }
     .main__partners__logo{
         display: none;
@@ -788,7 +827,7 @@ footer{
     .input{
         width: 100%;
     }
-    input[type=text], input[type=phone], button[type=submit]{
+    input[type=text], input[type=tel], button[type=submit]{
         width: 100%;
     }
     div .swiper{
