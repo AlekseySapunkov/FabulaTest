@@ -126,11 +126,11 @@ header{
 }
 .menu__btn > span::before {
   content: '';
-  top: -18px;
+  top: -8px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 18px;
+  top: 8px;
 }
  .menu__box{
     display: flex;
@@ -282,13 +282,13 @@ button[type=submit]:hover{
 .header__text-container-2{
     display: flex;
     text-align: left;
-    margin-top: 500px;
+    margin-top: 470px;
     margin-bottom: 200px;
-    width: 85%;
+    width: 90%;
     min-width: 108px;
 }
 .header__text-container-2__text{
-    margin-left: 6%;
+    margin-left: 2.5%;
     width: 254px;
 }
 .header__text-container-2__text h3{
@@ -629,6 +629,11 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+@media (max-width: 1500px){
+    .phone{
+        display: none;
+    }
+}
 @media (max-width: 800px){
     header{
         align-items: center;
@@ -651,9 +656,6 @@ footer{
         background-image: url('../img/bg 1.png');
         background-repeat: no-repeat;
     }
-    .phone{
-        display: none;
-    }
     .header__form{
         background-color: #000000;
         padding-top: 30px;
@@ -667,6 +669,9 @@ footer{
     h1{
         font-size: 24px;
         line-height: 35px;
+    }
+    h2{
+        line-height: 30px;
     }
     h3{
         font-size: 16px;
@@ -684,7 +689,7 @@ footer{
         flex-direction: column;
     }
     #menu__toggle{
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     .menu__box{
@@ -709,8 +714,15 @@ footer{
     .menu__btn > span::before,
     .menu__btn > span::after{
        right: 0;
-       top: 9px;
     }
+    .menu__btn > span::before{
+        content: "";
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
     .main__partners__logo{
         display: none;
     }
@@ -827,7 +839,7 @@ footer{
     .input{
         width: 100%;
     }
-    input[type=text], input[type=tel], button[type=submit]{
+    input[type=text], input[type=tel], button[type=submit], .checkbox{
         width: 100%;
     }
     div .swiper{
@@ -845,6 +857,9 @@ footer{
     .main__service h1{
         margin-bottom: 20px;
     }
+    .main__service h1 ~ p{
+        width: 100%;
+    }
     .main__service__card{
         width: 130px;
     }
@@ -859,6 +874,10 @@ footer{
     .main__service__text-cards h2{
         margin-top: 0;
         margin-bottom: 20px;
+        width: 100%;
+    }
+    .main__service__text-cards h2 ~ p{
+        width: 100%;
     }
     .card-wrapper{
         justify-content:space-between;
@@ -892,5 +911,22 @@ footer{
     }
     .modal{
         width: 90%;
+    }
+    #about-clients h2{
+        width: 100%;
+    }
+    #map{
+        width: 100%;
+    }
+    .client-logo{
+        width: 100%;
+    }
+    .logo-wrap{
+        gap:unset;
+        width: 100%;
+    }
+    .logo-wrap-text{
+        margin-left: auto;
+        width: 130px;
     }
 }
