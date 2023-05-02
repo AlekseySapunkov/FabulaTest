@@ -890,4 +890,7 @@ footer{
     .main__contacts__contacts{
         padding-top: 0;
     }
+    .modal{
+        width: 90%;
+    }
 }
