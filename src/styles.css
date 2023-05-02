@@ -670,6 +670,9 @@ footer{
         font-size: 24px;
         line-height: 35px;
     }
+    h2{
+        line-height: 30px;
+    }
     h3{
         font-size: 16px;
         line-height: 23px;
@@ -854,6 +857,9 @@ footer{
     .main__service h1{
         margin-bottom: 20px;
     }
+    .main__service h1 ~ p{
+        width: 100%;
+    }
     .main__service__card{
         width: 130px;
     }
@@ -868,6 +874,10 @@ footer{
     .main__service__text-cards h2{
         margin-top: 0;
         margin-bottom: 20px;
+        width: 100%;
+    }
+    .main__service__text-cards h2 ~ p{
+        width: 100%;
     }
     .card-wrapper{
         justify-content:space-between;
@@ -898,5 +908,8 @@ footer{
     }
     .main__contacts__contacts{
         padding-top: 0;
+    }
+    #about-clients h2{
+        width: 100%;
     }
 }
