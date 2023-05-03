@@ -600,6 +600,7 @@ div .swiper{
     margin-left: 20%;
     margin-bottom: 150px;
     margin-top: 60px;
+    column-gap: 50px;
 }
 .main__partners__logo>img{
     max-width: 350px;
