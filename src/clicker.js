@@ -36,7 +36,12 @@ const lefttTurn = () =>{
  
 
     result[counter].style.opacity = 1;
-    result.at(counter - 1 ).style.opacity = 1;
+    if(counter < result.length - 1 ){
+     result.at(counter + 1 ).style.opacity = 0.3;
+    } else{
+        result.at(0).style.opacity = 0.3;
+    }
+
     console.log(counter);
     console.log(partnerLogo.length);
     console.log(partnerLogo[counter].style.opacity);
