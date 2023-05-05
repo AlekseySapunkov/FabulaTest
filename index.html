@@ -69,10 +69,10 @@
           <form  action="/login" method="post">
             <h1>Забронировать частный борт</h1>
             <div class="form">
-            <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" required ></div>
-            <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" required></div>
-            <div class="input"><input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required></div>
-            <div class="input"><button type="submit">Забронировать</button></div>
+            <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" minlength="3" required ></div>
+            <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" minlength="1" required></div>
+            <div class="input"><input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" pattern="/^[\d\+][\d\(\)\ -]{4,14}\d$/"  minlength="11" maxlength="14" required></div>
+            <div class="input"><button type="submit" disabled="true">Забронировать</button></div>
             <div class="checkbox"><input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#" style="text-decoration: underline;">персональных данных</a></div>
           </div>
           </form>
@@ -282,7 +282,7 @@
         </div>
         </div>
         <div class="main__partners__logo">
-        <img src="img/transneft 1.png" alt="">
+        <img src="img/transneft1.png" alt="" style="opacity: 0.3;">
         <img src="img/image 4.png" alt="">
         <img src="img/SGT_logo_CMYK-01 1.png" alt="">
         <img src="img/lukoil.png" alt="">
@@ -315,10 +315,10 @@
       <form  action="/login" method="post">
         <h1>Забронировать частный борт</h1>
         <div class="form">
-        <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" required></div>
-        <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" required></div>
-        <div class="input"><input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" required></div>
-        <div class="input"><button type="submit">Забронировать</button></div>
+          <div class="input"><input type="text" name="name" placeholder="Имя"id="form__name" minlength="3" required ></div>
+          <div class="input"><input type="text" name="company" placeholder="Компания" id="form__compay" minlength="1" required></div>
+          <div class="input"><input type="tel" name="phone-number" placeholder="Телефон" id="form__phone" pattern="/^[\d\+][\d\(\)\ -]{4,14}\d$/"  minlength="11" maxlength="14" required></div>
+          <div class="input"><button type="submit" disabled="true">Забронировать</button></div>
         <div><input type="checkbox" name="agreement" value="" checked> Я даю согласие на обработку своих <a href="#" style="text-decoration: underline;">персональных данных</a></div>
       </div>
       </form>
