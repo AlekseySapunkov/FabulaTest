@@ -15,15 +15,6 @@ const rightTurn = () =>{
 
     result[counter].style.opacity = 1;
     result.at(counter - 1).style.opacity = 0.3;
-    console.log(counter);
-    console.log(partnerLogo);
-    console.log(partnerLogo[counter].style.opacity);
-  
-    let attr = logo.attributes;
-    for(let i = 0; i < attr.length; i++){
-        logo.setAttribute(attr[i].name, result[counter].getAttribute(attr[i].name));
-    }
-
 
 }
 const lefttTurn = () =>{
@@ -41,16 +32,6 @@ const lefttTurn = () =>{
     } else{
         result.at(0).style.opacity = 0.3;
     }
-
-    console.log(counter);
-    console.log(partnerLogo.length);
-    console.log(partnerLogo[counter].style.opacity);
-  
-    let attr = logo.attributes;
-    for(let i = 0; i < attr.length; i++){
-        logo.setAttribute(attr[i].name, result[counter].getAttribute(attr[i].name));
-    }
-
 
 }
     

@@ -14,7 +14,6 @@
     <script type="text/javascript" src="src/map.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script  type = "text/javascript" src="./src/index.js" defer></script>
-    <script  type = "text/javascript" src="./src/clicker.js" defer></script>
 </head>
 <body>
     <header>
@@ -40,7 +39,7 @@
                 <li><a class="menu__item" href="#">Контакты</a></li>
               </ul>
             </div>
-          <div class="phone"><b>8 800 123-45-67</b></div>
+          <a class="phone" href="#"><b>8 800 123-45-67</b></a>
         </div>
           <div class="header__text-container-1">
             <h1>Сайт для тестовой верстки чартерной авиакомпании </h1>
@@ -252,21 +251,72 @@
           и ориентированы на долгосрочное 
           сотрудничество.
           </h2> 
-
+          <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'          
+               const nSwiper = new Swiper('.anotherSlider', {
+                grabCursor: true,
+                slidesPerView: 'auto',
+                init: true,
+                loop: true,
+                spaceBetween: 0,
+                navigation:{
+                  nextEl: '.right-arrow',
+                  prevEl: '.left-arrow',
+                }
+                });
+            </script>
         <div class="feetback-with-logo">
           <div class="client-logo">
-            <div class="logo-wrap"><img src="img/image 4.png" alt="" width="100px" height="61px" >
+            <div class="anotherSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+            <div class="logo-wrap "><img src="img/image 4.png" alt="" width="100px" height="61px" >
             <div class="logo-wrap-text"><p><b>Петренко С. А.</b><br>
               Управляющий ООО «Леруа Мерлен ЮФО»</p>
             </div>
             </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="logo-wrap "><img src="img/lukoil.png" alt="" width="183px" height="38px">
+            <div class="logo-wrap-text"><p><b>Петренко С. А.</b><br>
+              Управляющий ООО «Леруа Мерлен ЮФО»</p>
+            </div>
+            </div>
+          </div>
+              <div class="logo-wrap swiper-slide"><img src="img/lukoil.png" alt="" width="183px" height="38px">
+                <div class="logo-wrap-text"><p><b>Петренко С. А.</b><br>
+                  Управляющий ООО «Леруа Мерлен ЮФО»</p>
+                </div>
+                </div>
+                <div class="logo-wrap swiper-slide"><img src="img/Promsvaz.png" alt="" width="152px" height="80px">
+                  <div class="logo-wrap-text"><p><b>Петренко С. А.</b><br>
+                    Управляющий ООО «Леруа Мерлен ЮФО»</p>
+                  </div>
+                  </div>
+          </div>
+        </div>
               <div class="arrow-main">
             <div class="left-arrow" ></div>
             <div class="right-arrow" ></div>
           </div>  
         </div>
-
+        <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'          
+             const neSwiper = new Swiper('.feetback-text', {
+              grabCursor: true,
+              slidesPerView: 'auto',
+              init: true,
+              spaceBetween: 20,
+              loop: true,
+              navigation:{
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+              }
+              });
+          </script>
             <div class="feetback-text">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
             <p>Отзыв от компании «Леруа Мерлен».
             На российский рынок компания 
             вышла в 2004 году, открыв первый магазин в городе Мытищи. 
@@ -274,7 +324,16 @@
             К 2006 году компания вышла на первое место среди DIY-сетей по ассортименту, обороту и объёму продаж на м². Гипермаркеты «Леруа Мерлен» зачастую организуются на одних площадках с «Ашан»,
             их площадь колеблется от 8000 до 20 000 м².
             </p>          
+          </div> 
+            <div class="swiper-slide">
+            <p>Отзыв от компании «Леруа Мерлен».
+            Активное развитие сети началось с 2005 года. 
+            К 2006 году компания вышла на первое место среди DIY-сетей по ассортименту, обороту и объёму продаж на м². Гипермаркеты «Леруа Мерлен» зачастую организуются на одних площадках с «Ашан»,
+            их площадь колеблется от 8000 до 20 000 м².
+            </p>          
           </div>
+        </div>
+        </div>
           <div class="arrow-main-mobile">
             <div class="left-arrow" ></div>
             <div class="right-arrow" ></div>
@@ -282,16 +341,51 @@
       </div>
         </div>
         </div>
+        <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'          
+          let max = window.matchMedia('(max-width: 800px)');
+          let newestSwiper = null;
+          window.addEventListener('resize', () => {
+          if (max && newestSwiper === null) {          
+            newestSwiper = new Swiper('.main__partners__logo', {
+              grabCursor: true,
+              slidesPerView: 7,
+              init: true,
+              spaceBetween: 50,
+              loop: true,
+              rewind: true,
+              navigation:{
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+              }
+              });
+            } else if(!max && newestSwiper !== null) {
+                newestSwiper.destroy();
+                newestSwiper = null;
+              }
+              return
+              });
+          </script>
         <div class="main__partners__logo">
-        <img src="img/transneft1.png" alt="" width="188.7px" height="50px">
-        <img src="img/image 4.png" alt="" width="100px" height="61px">
-        <img src="img/SGT.png" alt="" width="142px" height="47px">
-        <img src="img/lukoil.png" alt="" width="183px" height="38px">
-        <img src="img/Promsvaz.png" alt="" width="152px" height="80px">
-        <img src="img/Severstal.jpg" alt="" width="203px" height="64px">
-        <img src="img/kaustik.png" alt="" width="179px" height="60px">
-        <img src="img/Sovkom.png" alt="" width="242px" height="30px">
+          <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/transneft1.png" alt="" width="188.7px" height="50px"></div>
+        <div class="swiper-slide"><img src="img/image 4.png" alt="" width="100px" height="61px"></div>
+        <div class="swiper-slide"><img src="img/SGT.png" alt="" width="142px" height="47px"></div>
+        <div class="swiper-slide"><img src="img/lukoil.png" alt="" width="183px" height="38px"></div>
+        <div class="swiper-slide"><img src="img/Promsvaz.png" alt="" width="152px" height="80px"></div>
+        <div class="swiper-slide"><img src="img/Severstal.jpg" alt="" width="203px" height="64px"></div>
+        <div class="swiper-slide"><img src="img/kaustik.png" alt="" width="179px" height="60px"></div>
+        <div class="swiper-slide"><img src="img/Sovkom.png" alt="" width="242px" height="30px"></div>
+        <div class="swiper-slide"><img src="img/transneft1.png" alt="" width="188.7px" height="50px"></div>
+        <div class="swiper-slide"><img src="img/image 4.png" alt="" width="100px" height="61px"></div>
+        <div class="swiper-slide"><img src="img/SGT.png" alt="" width="142px" height="47px"></div>
+        <div class="swiper-slide"><img src="img/lukoil.png" alt="" width="183px" height="38px"></div>
+        <div class="swiper-slide"><img src="img/Promsvaz.png" alt="" width="152px" height="80px"></div>
+        <div class="swiper-slide"><img src="img/Severstal.jpg" alt="" width="203px" height="64px"></div>
+        <div class="swiper-slide"><img src="img/kaustik.png" alt="" width="179px" height="60px"></div>
+        <div class="swiper-slide"><img src="img/Sovkom.png" alt="" width="242px" height="30px"></div>
         </div>
+      </div>
       
       <div class="main__contacts">
         <h1>Контакты</h1>
