@@ -277,7 +277,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="logo-wrap "><img src="img/lukoil.png" alt="" width="183px" height="38px">
+            <div class="logo-wrap "><img src="img/SGT.png" alt="" width="142px" height="47px">
             <div class="logo-wrap-text"><p><b>Петренко С. А.</b><br>
               Управляющий ООО «Леруа Мерлен ЮФО»</p>
             </div>
@@ -345,7 +345,7 @@
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'          
           let max = window.matchMedia('(max-width: 800px)');
           let newestSwiper = null;
-          window.addEventListener('resize', () => {
+          window.addEventListener('pageshow', () => {
           if (max && newestSwiper === null) {          
             newestSwiper = new Swiper('.main__partners__logo', {
               grabCursor: true,
