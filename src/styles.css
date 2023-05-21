@@ -169,7 +169,6 @@ header{
     display: flex;
     width: 100%;
     height:max-content;
-    margin-top: 10%;
     padding-left: 20%;
     padding-right: 20%;
     margin-bottom: 10%;
@@ -202,7 +201,15 @@ input[type=tel] {
     width: 255px;
     height: 50px;
     border-radius: 5px;
+    border-width: 0;
     background-color: #C4C4C4;
+  }
+  input[type=checkbox]{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
   }
 input[type=text]:focus, input[type=phone]:focus{
     background-color: #FFFFFF;
@@ -275,15 +282,15 @@ button[type=submit]:hover{
     transform: rotate(-45deg);
   }
 .header__text-container-1{
-    margin-top: 160px;
+    margin-top: 50px;
     text-align: left;
     width: 45%;
 }
 .header__text-container-2{
     display: flex;
     text-align: left;
-    margin-top: 470px;
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 100px;
     width: 90%;
     min-width: 108px;
 }
