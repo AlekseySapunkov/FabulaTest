@@ -641,7 +641,6 @@ div .swiper{
 }
 .swiper-slide.swiper-slide-next>img{
     opacity: 1;
-    width: fit-content;
   }
 .main__partners__logo img{
     opacity: 0.3;
